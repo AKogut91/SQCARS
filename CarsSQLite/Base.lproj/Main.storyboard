@@ -22,17 +22,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Cn-Ui-Zpk">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="109" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Cn-Ui-Zpk">
                                 <rect key="frame" x="0.0" y="341" width="375" height="326"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="z8i-jn-q51">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="109" id="z8i-jn-q51" customClass="CustomeTableViewCell" customModule="CarsSQLite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z8i-jn-q51" id="Lrg-08-eUt">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="108.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJy-sa-zE6">
+                                                    <rect key="frame" x="31" y="20" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsY-Ox-LLy">
+                                                    <rect key="frame" x="31" y="60.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQx-aM-QSU">
+                                                    <rect key="frame" x="263" y="18" width="42" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3m-ne-qcn">
+                                                    <rect key="frame" x="263" y="60" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UsY-Ox-LLy" firstAttribute="leading" secondItem="Lrg-08-eUt" secondAttribute="leadingMargin" constant="23" id="4mx-AP-v3L"/>
+                                                <constraint firstItem="kJy-sa-zE6" firstAttribute="top" secondItem="Lrg-08-eUt" secondAttribute="topMargin" constant="12" id="B18-JK-xT8"/>
+                                                <constraint firstItem="UsY-Ox-LLy" firstAttribute="top" secondItem="QQx-aM-QSU" secondAttribute="bottom" constant="17.5" id="DW2-g6-Y8x"/>
+                                                <constraint firstItem="QQx-aM-QSU" firstAttribute="leading" secondItem="kJy-sa-zE6" secondAttribute="trailing" constant="190" id="DyG-cY-jgo"/>
+                                                <constraint firstItem="UsY-Ox-LLy" firstAttribute="top" secondItem="kJy-sa-zE6" secondAttribute="bottom" constant="20" id="IMA-5p-335"/>
+                                                <constraint firstItem="v3m-ne-qcn" firstAttribute="leading" secondItem="UsY-Ox-LLy" secondAttribute="trailing" constant="190" id="JHW-g9-XO0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="UsY-Ox-LLy" secondAttribute="bottom" constant="19" id="LBO-7p-C27"/>
+                                                <constraint firstItem="v3m-ne-qcn" firstAttribute="top" secondItem="QQx-aM-QSU" secondAttribute="bottom" constant="17" id="gmB-Ul-9gd"/>
+                                                <constraint firstItem="QQx-aM-QSU" firstAttribute="top" secondItem="Lrg-08-eUt" secondAttribute="topMargin" constant="10" id="nr5-ql-Chf"/>
+                                                <constraint firstItem="v3m-ne-qcn" firstAttribute="top" secondItem="QQx-aM-QSU" secondAttribute="bottom" constant="17" id="puu-07-dqh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="v3m-ne-qcn" secondAttribute="bottom" constant="19.5" id="wUt-6b-hde"/>
+                                                <constraint firstItem="kJy-sa-zE6" firstAttribute="leading" secondItem="Lrg-08-eUt" secondAttribute="leadingMargin" constant="23" id="ygr-X4-gG5"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="car" destination="QQx-aM-QSU" id="KTI-hV-P4j"/>
+                                            <outlet property="email" destination="UsY-Ox-LLy" id="nSG-zB-0SF"/>
+                                            <outlet property="model" destination="v3m-ne-qcn" id="yHd-E7-DH0"/>
+                                            <outlet property="name" destination="kJy-sa-zE6" id="EdH-GL-M79"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

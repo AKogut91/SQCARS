@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1170EA731F41FA3600020AB5 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170EA721F41FA3600020AB5 /* Contacts.swift */; };
 		1170EA751F41FB1400020AB5 /* SQLiteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170EA741F41FB1400020AB5 /* SQLiteData.swift */; };
+		1170EA771F4231AA00020AB5 /* CustomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170EA761F4231AA00020AB5 /* CustomeTableViewCell.swift */; };
 		11ED91541F41EBEE0016B407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED91531F41EBEE0016B407 /* AppDelegate.swift */; };
 		11ED91561F41EBEE0016B407 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED91551F41EBEE0016B407 /* ViewController.swift */; };
 		11ED91591F41EBEE0016B407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11ED91571F41EBEE0016B407 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		1170EA6E1F41F4E200020AB5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		1170EA721F41FA3600020AB5 /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		1170EA741F41FB1400020AB5 /* SQLiteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteData.swift; sourceTree = "<group>"; };
+		1170EA761F4231AA00020AB5 /* CustomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeTableViewCell.swift; sourceTree = "<group>"; };
 		11ED91501F41EBEE0016B407 /* CarsSQLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsSQLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ED91531F41EBEE0016B407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11ED91551F41EBEE0016B407 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				11ED91531F41EBEE0016B407 /* AppDelegate.swift */,
 				11ED91551F41EBEE0016B407 /* ViewController.swift */,
+				1170EA761F4231AA00020AB5 /* CustomeTableViewCell.swift */,
 				1170EA741F41FB1400020AB5 /* SQLiteData.swift */,
 				1170EA721F41FA3600020AB5 /* Contacts.swift */,
 				11ED91571F41EBEE0016B407 /* Main.storyboard */,
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1170EA771F4231AA00020AB5 /* CustomeTableViewCell.swift in Sources */,
 				1170EA731F41FA3600020AB5 /* Contacts.swift in Sources */,
 				1170EA751F41FB1400020AB5 /* SQLiteData.swift in Sources */,
 				11ED91561F41EBEE0016B407 /* ViewController.swift in Sources */,

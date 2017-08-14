@@ -27,23 +27,29 @@ class ViewController: UIViewController {
         
         carTable.dataSource = self
         carTable.delegate = self
+        
+        contacts = ContactsDB.instance.getContact()
        
     }
 
-
     @IBAction func login(_ sender: Any) {
         
-        let name = self.name.text
-        let email = self.email.text
-        let carBrand = self.carBrand.text
-        let modelCar = self.mobdelCar.text
+        let name = self.name.text ?? ""
+        let email = self.email.text ?? ""
+        let carBrand = self.carBrand.text ?? ""
+        let modelCar = self.mobdelCar.text ?? ""
         
-        let contact = Contacts.init(id: 0, name: name!, email: email!, carBrand: carBrand!, modelCar: modelCar!)
-        
-        contacts.append(contact)
-        
-        carTable.reloadData()
-                
+    
+        if let id = ContactsDB.instance.addContanct(cname: name, cemail: email, ccar: carBrand, cmodel: modelCar) {
+            
+        let contact = Contacts.init(id: id, name: name, email: email, carBrand: carBrand, modelCar: modelCar)
+            
+            contacts.append(contact)
+            
+            carTable.insertRows(at: [IndexPath(row: contacts.count-1, section: 0)], with: .fade)
+            
+        }
+    
         print("Login")
         
     }
@@ -58,10 +64,16 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomeTableViewCell
         
-        cell.textLabel?.text = contacts[indexPath.row].modelCar
+        let contactIndex = contacts[indexPath.row]
         
+        cell.email.text = contactIndex.email
+        cell.name.text = contactIndex.name
+        cell.car.text = contactIndex.carBrand
+        cell.model.text = contactIndex.modelCar
+        
+    
         selectedContacts = indexPath.row
         
         return cell

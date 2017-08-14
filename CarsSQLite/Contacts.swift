@@ -11,10 +11,18 @@ import Foundation
 class Contacts {
     
     var id = Int64()
-    var name: String = ""
-    var email: String = ""
-    var carBrand: String = ""
-    var modelCar: String = ""
+    var name: String
+    var email: String
+    var carBrand: String
+    var modelCar: String
+    
+    init(id: Int64) {
+        self.id = id
+        name = ""
+        email = ""
+        carBrand = ""
+        modelCar = ""
+    }
     
     init(id: Int64, name:String, email: String, carBrand: String, modelCar: String) {
         
