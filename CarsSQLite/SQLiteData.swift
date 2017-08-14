@@ -3,6 +3,7 @@
 //  CarsSQLite
 //
 //  Created by AlexanderKogut on 8/14/17.
+// alexander.kogyt@gmail.com
 //  Copyright © 2017 AlexanderKogut. All rights reserved.
 //
 
@@ -56,6 +57,8 @@ class ContactsDB {
             
             })
             
+            
+            
         } catch {
             
             print("Unable to create table")
@@ -83,6 +86,7 @@ class ContactsDB {
         
     }
     
+    
     func getContact() -> [Contacts] {
         
         var contacts = [Contacts]()
@@ -109,6 +113,25 @@ class ContactsDB {
         
         return contacts
     }
+    
+    
+    func deletid(cid: Int64) -> Bool {
+        
+        do {
+            
+            let contact = contacts.filter(id == cid)
+            try db!.run(contact.delete())
+            return true
+            
+        } catch {
+            
+            print("Delet failed")
+        }
+        
+        return false
+    }
+    
+    
     
     
     

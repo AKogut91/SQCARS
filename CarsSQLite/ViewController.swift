@@ -3,6 +3,7 @@
 //  CarsSQLite
 //
 //  Created by AlexanderKogut on 8/14/17.
+// alexander.kogyt@gmail.com
 //  Copyright © 2017 AlexanderKogut. All rights reserved.
 //
 
@@ -78,6 +79,17 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell
         
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if selectedContacts != nil {
+            ContactsDB.instance.deletid(cid: contacts[selectedContacts!].id)
+            contacts.remove(at: selectedContacts!)
+            
+             carTable.deleteRows(at: [IndexPath(row: contacts.count-1, section: 0)], with: .fade)
+            
+        }
     }
     
     

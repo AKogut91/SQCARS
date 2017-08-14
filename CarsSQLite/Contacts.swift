@@ -3,6 +3,7 @@
 //  CarsSQLite
 //
 //  Created by AlexanderKogut on 8/14/17.
+// alexander.kogyt@gmail.com
 //  Copyright © 2017 AlexanderKogut. All rights reserved.
 //
 

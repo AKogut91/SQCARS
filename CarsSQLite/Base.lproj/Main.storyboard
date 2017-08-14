@@ -34,43 +34,44 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJy-sa-zE6">
-                                                    <rect key="frame" x="31" y="20" width="42" height="20.5"/>
+                                                    <rect key="frame" x="16" y="16" width="42" height="48"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsY-Ox-LLy">
-                                                    <rect key="frame" x="31" y="60.5" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="UsY-Ox-LLy">
+                                                    <rect key="frame" x="16" y="72" width="42" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQx-aM-QSU">
-                                                    <rect key="frame" x="263" y="18" width="42" height="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQx-aM-QSU">
+                                                    <rect key="frame" x="317" y="16" width="42" height="47.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3m-ne-qcn">
-                                                    <rect key="frame" x="263" y="60" width="42" height="21"/>
+                                                    <rect key="frame" x="317" y="71.5" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="UsY-Ox-LLy" firstAttribute="leading" secondItem="Lrg-08-eUt" secondAttribute="leadingMargin" constant="23" id="4mx-AP-v3L"/>
-                                                <constraint firstItem="kJy-sa-zE6" firstAttribute="top" secondItem="Lrg-08-eUt" secondAttribute="topMargin" constant="12" id="B18-JK-xT8"/>
-                                                <constraint firstItem="UsY-Ox-LLy" firstAttribute="top" secondItem="QQx-aM-QSU" secondAttribute="bottom" constant="17.5" id="DW2-g6-Y8x"/>
-                                                <constraint firstItem="QQx-aM-QSU" firstAttribute="leading" secondItem="kJy-sa-zE6" secondAttribute="trailing" constant="190" id="DyG-cY-jgo"/>
-                                                <constraint firstItem="UsY-Ox-LLy" firstAttribute="top" secondItem="kJy-sa-zE6" secondAttribute="bottom" constant="20" id="IMA-5p-335"/>
-                                                <constraint firstItem="v3m-ne-qcn" firstAttribute="leading" secondItem="UsY-Ox-LLy" secondAttribute="trailing" constant="190" id="JHW-g9-XO0"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="UsY-Ox-LLy" secondAttribute="bottom" constant="19" id="LBO-7p-C27"/>
-                                                <constraint firstItem="v3m-ne-qcn" firstAttribute="top" secondItem="QQx-aM-QSU" secondAttribute="bottom" constant="17" id="gmB-Ul-9gd"/>
-                                                <constraint firstItem="QQx-aM-QSU" firstAttribute="top" secondItem="Lrg-08-eUt" secondAttribute="topMargin" constant="10" id="nr5-ql-Chf"/>
-                                                <constraint firstItem="v3m-ne-qcn" firstAttribute="top" secondItem="QQx-aM-QSU" secondAttribute="bottom" constant="17" id="puu-07-dqh"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="v3m-ne-qcn" secondAttribute="bottom" constant="19.5" id="wUt-6b-hde"/>
-                                                <constraint firstItem="kJy-sa-zE6" firstAttribute="leading" secondItem="Lrg-08-eUt" secondAttribute="leadingMargin" constant="23" id="ygr-X4-gG5"/>
+                                                <constraint firstItem="UsY-Ox-LLy" firstAttribute="top" secondItem="kJy-sa-zE6" secondAttribute="bottom" constant="8" id="5cS-fC-Y4h"/>
+                                                <constraint firstItem="v3m-ne-qcn" firstAttribute="top" secondItem="QQx-aM-QSU" secondAttribute="bottom" constant="8" id="8Rj-2n-gg1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="QQx-aM-QSU" secondAttribute="trailing" constant="8" id="CXP-bg-SaT"/>
+                                                <constraint firstItem="QQx-aM-QSU" firstAttribute="top" secondItem="Lrg-08-eUt" secondAttribute="topMargin" constant="8" id="CbU-l5-WfQ"/>
+                                                <constraint firstItem="kJy-sa-zE6" firstAttribute="top" secondItem="Lrg-08-eUt" secondAttribute="topMargin" constant="8" id="DBa-1Z-cvW"/>
+                                                <constraint firstItem="UsY-Ox-LLy" firstAttribute="leading" secondItem="Lrg-08-eUt" secondAttribute="leadingMargin" constant="8" id="JFG-RN-T9c"/>
+                                                <constraint firstItem="v3m-ne-qcn" firstAttribute="top" secondItem="QQx-aM-QSU" secondAttribute="bottom" constant="8" id="R0g-F8-waf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="v3m-ne-qcn" secondAttribute="trailing" constant="8" id="RiR-6e-pog"/>
+                                                <constraint firstItem="kJy-sa-zE6" firstAttribute="leading" secondItem="Lrg-08-eUt" secondAttribute="leadingMargin" constant="8" id="S0f-rR-FgD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="v3m-ne-qcn" secondAttribute="bottom" constant="8" id="Zun-wJ-Ib0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="UsY-Ox-LLy" secondAttribute="bottom" constant="8" id="dSE-RF-d1l"/>
+                                                <constraint firstItem="UsY-Ox-LLy" firstAttribute="top" secondItem="kJy-sa-zE6" secondAttribute="bottom" constant="8" id="xQn-BM-tCC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -109,7 +110,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBM-PW-0Qx">
                                 <rect key="frame" x="42" y="227" width="291" height="30"/>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Login ">
+                                <state key="normal" title="Add">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
